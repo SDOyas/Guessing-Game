@@ -7,3 +7,9 @@
 #include <time.h>
 #include <stdlib.h>
 
+void menu()
+{
+    printf("To Play Game Press 1\n");
+    printf("To Change Max Number Press 2\n");
+    printf("To Quit Press 3\n");
+}
