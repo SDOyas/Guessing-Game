@@ -45,5 +45,15 @@ int main()
                             }
                         }
                 }
+                else if(choice == 2)
+                {
+                    printf("What number do you wish to be the new max?");
+                    scanf("%d", &max);
+                        while(max < 0)
+                        {
+                            printf("Please enter a positive number.");
+                            scanf("%d", &max);
+                        }
+                }
         }
 }
