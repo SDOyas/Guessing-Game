@@ -18,6 +18,7 @@ int main()
 {
     int max = 10;
     int choice = 0, inp, random;
+    int guesses;
 
         while(choice != 3)
         {
@@ -43,6 +44,7 @@ int main()
                             {
                                 printf("Bingo! You won. :)");
                             }
+                            guesses++;
                         }
                 }
                 else if(choice == 2)
@@ -55,5 +57,11 @@ int main()
                             scanf("%d", &max);
                         }
                 }
+                else if(choice == 3)
+                {
+                    return 0;
+                }
         }
+        printf("Guesses: %d\n", guesses);
+        return 0;
 }
